@@ -4,8 +4,7 @@ import NewsCard from "../../components/NewsCard/NewsCard";
 import wordsToNumbers from "words-to-numbers";
 import iconRobot from "../../images/icon.png";
 
-const alanKey =
-  "543264df21a06aa1c062ab91db8468c62e956eca572e1d8b807a3e2338fdd0dc/stage";
+const alanKey = process.env.ALAN_KEY;
 
 function Home() {
   const [newsArticles, setNewsArticles] = useState([]);
