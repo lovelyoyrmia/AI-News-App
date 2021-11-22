@@ -1,16 +1,7 @@
-import React, { useEffect } from 'react'
-import styled from 'styled-components'
-import video from '../../videos/video.mp4'
-
+import React, { useEffect } from "react";
+import styled from "styled-components";
 
 const PageNotFoundStyle = styled.div`
-  video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: fixed;
-    z-index: -1;
-  }
   .container__404 {
     height: 100%;
     padding: 1rem;
@@ -38,30 +29,30 @@ const PageNotFoundStyle = styled.div`
     border-radius: 8px;
     cursor: pointer;
   }
-`
+`;
 
 function Error(props) {
-
   useEffect(() => {
-    document.title = 'Page not found :('
-  }, [])
+    document.title = "Page not found :(";
+  }, []);
 
   return (
     <PageNotFoundStyle>
-      <video  
-        autoPlay 
-        muted
-        loop
-        src={video} />
-      <div className='container__404'>
-        <div className='title__404'>404 Page Not Found !!</div>
-        <div className='subTitle__404'>I'm so sorry, I didn't get that page :(</div>
-        <button onClick={() => {
-          props.history.push('/')
-        }}  >Back To Home</button>
+      <div className="container__404">
+        <div className="title__404">404 Page Not Found !!</div>
+        <div className="subTitle__404">
+          I'm so sorry, I didn't get that page :(
+        </div>
+        <button
+          onClick={() => {
+            props.history.push("/");
+          }}
+        >
+          Back To Home
+        </button>
       </div>
     </PageNotFoundStyle>
-  )
+  );
 }
 
-export default Error
+export default Error;
