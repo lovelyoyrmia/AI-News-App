@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import wordsToNumbers from "words-to-numbers";
-import { FooterContainer, NavBar } from "../../components";
 import iconRobot from "../../images/icon.png";
 
-const alanKey = process.env.ALAN_KEY;
+const alanKey =
+  "543264df21a06aa1c062ab91db8468c62e956eca572e1d8b807a3e2338fdd0dc/stage";
 
 function Home() {
   const [newsArticles, setNewsArticles] = useState([]);
@@ -42,7 +42,6 @@ function Home() {
 
   return (
     <>
-      <NavBar />
       <div>
         <div
           style={{
@@ -54,14 +53,13 @@ function Home() {
             src={iconRobot}
             alt="icon.png"
             style={{
-              width: "20rem",
-              height: "20rem",
+              width: "17rem",
+              height: "17rem",
             }}
           />
         </div>
         <NewsCard articles={newsArticles} activeArticle={activeArticle} />
       </div>
-      <FooterContainer />
     </>
   );
 }
