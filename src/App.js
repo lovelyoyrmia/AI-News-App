@@ -29,16 +29,19 @@ function App() {
             className="fab fa-github"
             href="https://github.com/lovelyoyrmia"
             target="_blank"
+            rel="noreferrer"
           />
           <a
             className="fab fa-instagram"
             href="https://www.instagram.com/lovelyoyrmia/"
             target="_blank"
+            rel="noreferrer"
           />
           <a
             className="fab fa-linkedin"
             href="https://www.linkedin.com/in/lovelyo-mokalu-a831aa175/"
             target="_blank"
+            rel="noreferrer"
           />
         </div>
       </div>
