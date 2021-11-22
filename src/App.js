@@ -1,12 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {
-  Error,
-  LatestNews,
-  NewsByCategories,
-  NewsBySources,
-  NewsByTerms,
-} from "./pages";
+import { Home, Error } from "./pages";
 
 function App() {
   return (
@@ -14,13 +8,24 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/latest-news" component={LatestNews} />
-          <Route path="/news-by-categories" component={NewsByCategories} />
-          <Route path="/news-by-sources" component={NewsBySources} />
-          <Route path="/News-by-terms" component={NewsByTerms} />
           <Route component={Error} />
         </Switch>
       </Router>
+      <div
+        style={{
+          display: "flex",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "10vh",
+          borderTop: "1px solid grey",
+          marginTop: "1rem",
+        }}
+      >
+        <p>
+          Created by Lovelyo Yeremia <i className="fas fa-facebook" />
+        </p>
+      </div>
     </>
   );
 }
