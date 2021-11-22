@@ -32,7 +32,7 @@ function App() {
           />
           <a
             className="fab fa-instagram"
-            href="https://instagram.com/lovelyoyrmia"
+            href="https://www.instagram.com/lovelyoyrmia/"
             target="_blank"
           />
           <a
